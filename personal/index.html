@@ -34,47 +34,48 @@
 </head>
 <body>
 	
+	<!-- header goes here -->
 	<header>
-		<div class="container">
-			<div class="heading-empty">
-				<div class="row">
-					<div class="col-sm-6 col-md-6 col-lg-3">
-						<div class="scroll-btn">
-							<div>
-								<h5>About</h5>
-							</div><!-- right-area -->
-						</div><!-- info -->
-					</div><!-- col-sm-4 -->
-					
-					<div class="col-sm-6 col-md-6 col-lg-3">
-							<div class="scroll-btn">
-								<div>
-									<h5>Skills</h5>
+			<div class="container">
+				<div class="heading-empty">
+					<div class="row">
+						<div class="col-sm-6 col-md-6 col-lg-3">
+							<div class="scroll-btn" onClick="document.getElementById('about').scrollIntoView();">
+								<div href='#about'>
+									<h5>About</h5>
 								</div><!-- right-area -->
 							</div><!-- info -->
 						</div><!-- col-sm-4 -->
-
-					<div class="col-sm-6 col-md-6 col-lg-3">
-						<div class="scroll-btn">
-							<div>
-								<h5>Work Experience</h5>
-							</div><!-- right-area -->
-						</div><!-- info -->
-					</div><!-- col-sm-4 -->
-					
-					<div class="col-sm-6 col-md-6 col-lg-3">
-						<div class="scroll-btn">
-							<div>
-								<h5>Projects</h5>
-							</div><!-- right-area -->
-						</div><!-- info -->
-					</div><!-- col-sm-4 -->
-				</div><!-- row -->
-			</div><!-- heading-wrapper -->
-			
-			<a class="downlad-btn" href="files/Anirudh_Maddula_Resume.pdf">Download CV</a>
-		</div><!-- container -->
-	</header>
+						
+						<div class="col-sm-6 col-md-6 col-lg-3">
+								<div class="scroll-btn" onClick="document.getElementById('skills').scrollIntoView();">
+									<div>
+										<h5>Skills</h5>
+									</div><!-- right-area -->
+								</div><!-- info -->
+							</div><!-- col-sm-4 -->
+	
+						<div class="col-sm-6 col-md-6 col-lg-3">
+							<div class="scroll-btn" onClick="document.getElementById('work').scrollIntoView();">
+								<div>
+									<h5>Work Experience</h5>
+								</div><!-- right-area -->
+							</div><!-- info -->
+						</div><!-- col-sm-4 -->
+						
+						<div class="col-sm-6 col-md-6 col-lg-3">
+							<div class="scroll-btn" onClick="document.getElementById('projects').scrollIntoView();">
+								<div>
+									<h5>Projects</h5>
+								</div><!-- right-area -->
+							</div><!-- info -->
+						</div><!-- col-sm-4 -->
+					</div><!-- row -->
+				</div><!-- heading-wrapper -->
+				
+				<!-- <a class="downlad-btn" href="files/Anirudh_Maddula_Resume.pdf">Download CV</a> -->
+			</div><!-- container -->
+		</header>
 	
 	<section class="intro-section">
 		<div class="container">
@@ -100,22 +101,38 @@
 					</div><!-- intro -->
 				</div><!-- col-sm-8 -->
 			</div><!-- row -->
+			<!-- <center> -->
+			<div class="text-center">
+				<a class="downlad-btn" href="files/Deedy_CV.pdf">Download Resume</a>
+			</div>
+			<!-- </center> -->
 		</div><!-- container -->
 	</section><!-- intro-section -->
 
-	<section class="about-section section">
+	<section class="about-section section" id='about'>
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12 col-md-3">
 						<div class="heading">
 							<h3><b>About me</b></h3>
-							<h6 class="font-lite-black"><b>PROFESSIONAL PATH</b></h6>
+							<!-- <h6 class="font-lite-black"><b>PROFESSIONAL PATH</b></h6> -->
 						</div>
 					</div><!-- col-sm-3 -->
 					<div class="col-sm-12 col-md-9">
-						<p class="margin-b-50">I'm currently a junior at Cornell University studying Computer Science. I have been in love with CS and the
-							potential it has in any field. For that reason, I have been exploring applications of CS to everything from electrical engineering and chemistry
-							to Virtual Reality and Machine Learning. In fact, I plan on pursuing a Masters of Engineering from Cornell with a specialty in Artifical Intelligence.
+						<p class="margin-b-50">
+							I'm currently a senior at Cornell University studying Computer Science. 
+							I'm also proud to announce I'll be pursuing a Master of Engineering in Computer Science at Cornell! 
+							My interests are mainly in Full-Stack Engineering, Data Engineering, and Machine Learning. 
+							In fact, I'm very invested in Natural Language Processing and Computer Vision research.
+
+						</br>
+
+							I like to spend my free time drumming with the Cornell Big Red Marching Band! 
+							It has defintely made my time at Cornell worth it.
+
+						</br>
+
+							I'm currently searching for Full-Time opportunities.
 							Feel free to reach out if you have any questions!
 						</p>
 	
@@ -124,78 +141,56 @@
 			</div><!-- container -->
 		</section><!-- about-section -->
 
-	<section class="skills-section section">
+	<section class="skills-section section" id='skills'>
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12 center-text">
 					<div class="heading">
 						<h3><b>Technical Skills</b></h3>
-						<h6 class="font-lite-black"><b>I'M GOOD AT</b></h6>
+						<!-- <h6 class="font-lite-black"><b>I'M GOOD AT</b></h6> -->
 					</div>
 				</div><!-- col-sm-12 -->
 			
-				<div class="col-sm-12 col-md-6">
+				<div class="col-sm-12 col-md-4">
 					<h4><b>Programming</b></h4>
 					<!-- <h6 class="expert">EXPERT</h6> -->
 
 					<p class="progress-title"><b>Java</b></p>
-					<p class="progress-title"><b>Maven</b></p>
 					<p class="progress-title"><b>Python</b></p>
-					<p class="progress-title"><b>Flask</b></p>
-					<p class="progress-title"><b>C</b></p>
+					<p class="progress-title"><b>Javascript</b></p>
+					<p class="progress-title"><b>OCaml</b></p>
 					<p class="progress-title"><b>C++</b></p>
 					<p class="progress-title"><b>C#</b></p>
 					<p class="progress-title"><b>HTML/CSS</b></p>
-					<p class="progress-title"><b>Javascript</b></p>
-					<p class="progress-title"><b>React.js</b></p>
-					<p class="progress-title"><b>Node.js</b></p>
-					<p class="progress-title"><b>Express</b></p>
-					<p class="progress-title"><b>Ocaml</b></p>
-					<p class="progress-title"><b>Git</b></p>
-
-					
-					<!-- <p class="margin-tb-30">Duis non volutpat arcu, eu mollis tellus. Sed finibus aliquam neque sit amet sodales. 
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus pellentes que velit, 
-						quis consequat nulla effi citur at.</p> -->
-						
-					<!-- <div class="line-progress margin-b-20" data-prog-percent=".90"> -->
-						<div></div>
-						<!-- <p class="progress-title"><b>Java</b></p> -->
-					<!-- </div> -->
-					
-					<!-- <div class="line-progress margin-b-50" data-prog-percent=".85"> -->
-						<div></div>
-						<!-- <p class="progress-title"><b>Maven</b></p> -->
-					<!-- </div> -->
+					<p class="progress-title"><b>SQL</b></p>
 
 				</div><!-- col-md-6 -->
 				
-				<div class="col-sm-12 col-md-6">
-					<h4><b>Software</b></h4>
+				<div class="col-sm-12 col-md-4">
+					<h4><b>Frameworks</b></h4>
 					<!-- <h6 class="expert">EXPERT</h6> -->
 					
-					<p class="progress-title"><b>MySQL/PostgreSQL/MongoDB</b></p>
+					<p class="progress-title"><b>Node.js</b></p>
+					<p class="progress-title"><b>Express</b></p>
+					<p class="progress-title"><b>React.js</b></p>
+					<p class="progress-title"><b>React-Native</b></p>
+					<p class="progress-title"><b>Maven</b></p>
 					<p class="progress-title"><b>Unity</b></p>
-					<p class="progress-title"><b>Windows/Linux</b></p>
-					<p class="progress-title"><b>AWS</b></p>
 					<p class="progress-title"><b>Docker/Kubernetes</b></p>
 					<p class="progress-title"><b>Ansible</b></p>
 					<p class="progress-title"><b>Jenkins</b></p>
-					<p class="progress-title"><b>JMeter</b></p>
 
-					<!-- <p class="margin-tb-30">Duis non volutpat arcu, eu mollis tellus. Sed finibus aliquam neque sit amet sodales. 
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus pellentes que velit, 
-						quis consequat nulla effi citur at.</p> -->
-						
-					<!-- <div class="line-progress margin-b-20" data-prog-percent=".97"> -->
-						<div></div>
-						<!-- <p class="progress-title"><b>PHOTOSHOP</b></p> -->
-					<!-- </div> -->
+				</div><!-- col-md-6 -->
+
+				<div class="col-sm-12 col-md-4">
+					<h4><b>Software</b></h4>
+					<!-- <h6 class="expert">EXPERT</h6> -->
 					
-					<!-- <div class="line-progress margin-b-50" data-prog-percent=".97"> -->
-						<div></div>
-						<!-- <p class="progress-title"><b>ILLUSTRATOR</b></p> -->
-					<!-- </div> -->
+					<p class="progress-title"><b>Windows/Linux/OSX</b></p>
+					<p class="progress-title"><b>AWS</b></p>
+					<p class="progress-title"><b>Git</b></p>
+					<p class="progress-title"><b>Jenkins</b></p>
+					<p class="progress-title"><b>JMeter</b></p>
 
 				</div><!-- col-md-6 -->
 			</div><!-- row -->
@@ -203,7 +198,7 @@
 	</section><!-- skills-section -->
 
 	
-	<section class="experience-section section">
+	<section class="experience-section section" id='work'>
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-4">
@@ -213,6 +208,28 @@
 					</div>
 				</div><!-- col-sm-4 -->
 				<div class="col-sm-8">
+
+					<div class="experience margin-b-50">
+						<h4><b>Software Development Intern</b></h4>
+						<h5 class="font-yellow"><b>Capital One</b></h5>
+						<h6 class="margin-t-10">Summer 2019</h6>
+						<p class="font-semi-white margin-tb-30">
+							This past summer I worked on a division in Capital One that deals with Banking, namely, bank fraud.
+							My team worked on a tool that enhances fraud prevention using step-up authentication. Most of my work revolved
+							around Full-Stack Development and API design. Our product was reaching version 2 which required a complete refactor of
+							the codebase and submitting a new API to an internal EC2 instance.
+							<br/>
+							One specific project I undertook was developing a Client Configuration Portal that could onboard clients into our system.
+							It was a seamless pipeline that just required clients to fill out a form, such that we had access to their preferences
+							when onboarded onto our fraud security tool:
+						</p>
+						<ul class="list margin-b-30">
+							<li>Built intake application for automated onboarding to the fraud security tool</li>
+							<li>Developed app with React/Redux frontend and Node/Express backend</li>
+							<li>Deployed and configured AWS technologies such as AWS EC2, AWS Lambda, and AWS DynamoDB</li>
+
+						</ul>
+					</div><!-- experience -->
 				
 					<div class="experience margin-b-50">
 						<h4><b>Software Development Intern</b></h4>
@@ -243,26 +260,13 @@
 							</p>
 					</div><!-- experience -->
 					
-					<div class="experience margin-b-50">
-						<h4><b>Software Development Intern</b></h4>
-						<h5 class="font-yellow"><b>People's United Bank</b></h5>
-						<h6 class="margin-t-10">Winter 2016, Winter 2017</h6>
-						<!-- <p class="font-semi-white margin-tb-30">Duis non volutpat arcu, eu mollis tellus. Sed finibus aliquam neque sit amet sodales. 
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus pellentes que velit, 
-							quis consequat nulla effi citur at. Maecenas sed massa tristique.Duis non volutpat arcu, 
-							eu mollis tellus. Sed finibus aliquam neque sit amet sodales. </p> -->
-						<ul class="list margin-b-30">
-							<li>Constructed application in Java to automate client monetary transfers, optimized for date/money comparisons</li>
-							<li>Built web services for database management with SQL and Java to organize hundreds of client transactions</li>						</ul>
-					</div><!-- experience -->
-					
 				</div><!-- col-sm-8 -->
 			</div><!-- row -->
 		</div><!-- container -->
 		
 	</section><!-- experience-section -->
 
-	<section class="portfolio-section section">
+	<section class="portfolio-section section" id='projects'>
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12 col-md-3">
@@ -345,42 +349,10 @@
 					</div>
 				</div><!-- p-item -->
 				
-				<div class="p-item branding graphic-design">
-					<a href="images/portfolio-14-400x400.jpg" data-fluidbox>
-						<img src="images/portfolio-14-400x400.jpg" alt=""></a>
-				</div><!-- p-item -->
-				
-				<div class="p-item web-design">
-					<a href="images/portfolio-15-400x400.jpg" data-fluidbox>
-						<img src="images/portfolio-15-400x400.jpg" alt=""></a>
-				</div><!-- p-item -->
-				
-				<div class="p-item graphic-design">
-					<a class="img" href="images/portfolio-16-400x400.jpg" data-fluidbox>
-						<img src="images/portfolio-16-400x400.jpg" alt=""></a>
-				</div><!-- p-item -->
-				
-				<div class="p-item branding graphic-design">
-					<a href="images/portfolio-17-400x400.jpg" data-fluidbox>
-						<img src="images/portfolio-17-400x400.jpg" alt=""></a>
-				</div><!-- p-item -->
-				
-				<div class="p-item graphic-design web-design">
-					<a href="images/portfolio-18-400x400.jpg" data-fluidbox>
-						<img src="images/portfolio-18-400x400.jpg" alt=""></a>
-				</div><!-- p-item -->
-				
-				<div class="p-item  graphic-design branding">
-					<a href="images/portfolio-19-400x400.jpg" data-fluidbox>
-						<img src="images/portfolio-19-400x400.jpg" alt=""></a>
-				</div><!-- p-item -->
-					
-				<div class="p-item web-design branding">
-					<a href="images/portfolio-20-400x400.jpg" data-fluidbox>
-						<img src="images/portfolio-20-400x400.jpg" alt=""></a>
-				</div><!-- p-item -->
 			
 			</div><!-- portfolioContainer -->
+
+			<!-- I don't think this does anything... vvv -->
 
 			<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1title" aria-hidden="true">
 					<div class="modal-dialog " role="document">
@@ -405,7 +377,7 @@
 						</div>
 						<div class="modal-footer">
 						  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-						  <button type="button" class="btn btn-primary">Save changes</button>
+						  <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
 						</div>
 					  </div>
 					</div>
@@ -435,7 +407,7 @@
 						</div>
 						<div class="modal-footer">
 						  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-						  <button type="button" class="btn btn-primary">Save changes</button>
+						  <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
 						</div>
 					  </div>
 					</div>
@@ -450,7 +422,7 @@
 				<div class="col-sm-4">
 					<div class="heading">
 						<h3><b>Education</b></h3>
-						<h6 class="font-lite-black"><b>ACADEMIC CAREER</b></h6>
+						<!-- <h6 class="font-lite-black"><b>ACADEMIC CAREER</b></h6> -->
 					</div>
 				</div><!-- col-sm-4 -->
 				<div class="col-sm-8">
@@ -465,8 +437,8 @@
 						<div class="education margin-b-50">
 							<h4><b>Bachelors of Science</b></h4>
 							<h5 class="font-yellow"><b>Cornell Univeristy - Computer Science</b></h5>
-							<h6 class="font-lite-black margin-t-10">Expected May 2019</h6>
-							<p class="margin-tb-30">Completing undergrad in 3 years</p>
+							<h6 class="font-lite-black margin-t-10">Expected Dec 2019</h6>
+							<p class="margin-tb-30">Completing undergrad in ~3 years with the joint early M.Eng. program</p>
 						</div><!-- education -->
 						
 						<!-- <div class="education margin-b-50">
@@ -498,15 +470,15 @@
 				
 				<div class="col-sm-6 col-md-6 col-lg-3">
 					<div class="counter margin-b-30">
-						<h1 class="title"><b><span class="counter-value" data-duration="1400" data-count="7">0</span></b></h1>
+						<h1 class="title"><b><span class="counter-value" data-duration="1400" data-count="9">0</span></b></h1>
 						<h5 class="desc"><b>Projects Completed</b></h5>
 					</div><!-- counter -->
 				</div><!-- col-md-3-->
 				
 				<div class="col-sm-6 col-md-6 col-lg-3">
 					<div class="counter margin-b-30">
-						<h1 class="title"><b><span class="counter-value" data-duration="700" data-count="6">0</span></b></h1>
-						<h5 class="desc"><b>Hackathons</b></h5>
+						<h1 class="title"><b><span class="counter-value" data-duration="700" data-count="25">0</span></b></h1>
+						<h5 class="desc"><b>Courses Completed</b></h5>
 					</div><!-- counter -->
 				</div><!-- col-md-3-->
 				
